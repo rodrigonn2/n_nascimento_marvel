@@ -27,6 +27,17 @@ header{
 .characters{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#character_nav{
+background-color: #675050;
+background-image: url(../images/characters_art_mas_mob_01.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-blend-mode: multiply;
 }
 
 .characters li{
@@ -35,6 +46,15 @@ header{
     background-color: black;
     text-align: left;
     cursor: pointer;
+    transition: box-shadow 1s ease;
+    box-shadow: 0px 155px 0px 0px rgb(255, 0, 0) inset;
+}
+
+/* 0 top, 0 right, 0 bottom, 0 left */
+/*mdn webdocs to see transitions*/
+
+.characters li:hover{
+    box-shadow: 0px 220px 0 0 rgb(255,0,0) inset;
 }
 
 .characters li h5{
